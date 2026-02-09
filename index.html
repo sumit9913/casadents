@@ -142,4 +142,18 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <form
+    name="appointment"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    hidden
+  >
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="date" name="preferred_date" />
+    <input type="time" name="preferred_time" />
+    <select name="appointment_type"></select>
+    <textarea name="message"></textarea>
+  </form>
 </html>

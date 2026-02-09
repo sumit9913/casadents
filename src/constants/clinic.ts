@@ -4,8 +4,8 @@ export const clinicInfo = {
   description: "Premium prosthodontic care combining precision, comfort, and natural-looking results for your perfect smile.",
   
   // Contact Information
-  phone: "+91 98199 91313",
-  whatsapp: "+91 98199 91313",
+  phone: "+91 98699 91313",
+  whatsapp: "+91 98699 91313",
   email: "casadents@gmail.com",
   
   // Address
@@ -20,13 +20,13 @@ export const clinicInfo = {
   
   // Working Hours
   hours: {
-    weekdays: "9:00 AM - 7:00 PM",
-    saturday: "9:00 AM - 5:00 PM",
+    weekdays: "9:00 AM - 8:00 PM",
+    saturday: "9:00 AM - 7:00 PM",
     sunday: "By Appointment Only"
   },
-  
+
   // Google Maps Embed URL (placeholder)
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4290604948626!2d72.8980478!3d19.1053534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f9b3769ba5%3A0xefef247132c97ae1!2sCasaDent%20Multispeciality%20Dental%20%26%20Facial%20Aesthetic%20Clinic!5e0!3m2!1sen!2sin!4v1700000000000",
+  mapEmbedUrl: "https://maps.google.com/maps?width=600&height=400&hl=en&q=casadent%20multispeciality&t=&z=14&ie=UTF8&iwloc=B&output=embed",
   
   // Calendly URL (placeholder)
   calendlyUrl: "https://calendly.com/casadent",

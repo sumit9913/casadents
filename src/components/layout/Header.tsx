@@ -4,7 +4,8 @@ import { Menu, X, Phone, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
-import logoWhite from "@/assets/logo-white.png";
+import logoDent from "@/assets/logoDent.png";
+import logoText from "@/assets/logoText.png";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -59,9 +60,14 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src={showDarkHeader ? logoWhite : logo} 
+              src={logoDent} 
               alt="Casa Dent" 
-              className="h-12 md:h-14 w-auto" 
+              className="h-14 md:h-16 w-auto" 
+            />
+            <img 
+              src={logoText} 
+              alt="Casa Dent" 
+              className="h-6 md:h-8 w-auto ml-2" 
             />
           </Link>
 

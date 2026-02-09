@@ -28,7 +28,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Casa Dent" className="h-14 w-auto mb-6 brightness-0 invert" />
+            <img src={logo} alt="Casa Dent" className="h-32 w-auto mb-6 brightness-0 invert" />
             <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-6">
               {clinicInfo.description}
             </p>

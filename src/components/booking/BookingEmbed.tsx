@@ -1,52 +1,95 @@
-import { clinicInfo } from "@/constants/clinic";
-
-interface BookingEmbedProps {
-  className?: string;
-}
-
-export function BookingEmbed({ className }: BookingEmbedProps) {
+export function BookingEmbed({ className }: { className?: string }) {
   return (
     <div id="booking" className={className}>
       <div className="card-premium p-8 md:p-12">
         <div className="text-center mb-8">
-          <h3 className="heading-section mb-4">Schedule Your Consultation</h3>
+          <h3 className="heading-section mb-4">
+            Schedule Your Consultation
+          </h3>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Choose a convenient time for your appointment. We'll confirm your booking within 24 hours.
+            Select your preferred date and time. Our team will confirm your appointment shortly.
           </p>
         </div>
 
-        {/* Calendly Embed Placeholder */}
-        <div className="bg-muted rounded-xl p-8 min-h-[400px] flex items-center justify-center">
-          <div className="text-center">
-            <p className="text-muted-foreground mb-4">
-              Calendar booking widget will appear here
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Configure your Calendly URL in <code className="bg-background px-2 py-1 rounded">src/constants/clinic.ts</code>
-            </p>
-            <div className="mt-6">
-              <a
-                href={clinicInfo.calendlyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-hero inline-flex items-center px-8 py-3 rounded-full"
-              >
-                Open Booking Calendar
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* Netlify Form */}
+        <form
+          name="appointment"
+          method="POST"
+          action="/thank-you"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          {/* Required hidden input */}
+          <input type="hidden" name="form-name" value="appointment" />
 
-        {/* Alternative: Direct Calendly iframe when URL is set */}
-        {/* 
-        <iframe
-          src={`${clinicInfo.calendlyUrl}?hide_gdpr_banner=1&background_color=faf9f7&text_color=3d3428&primary_color=a67c52`}
-          width="100%"
-          height="700"
-          frameBorder="0"
-          className="rounded-xl"
-        />
-        */}
+          {/* Honeypot */}
+          <input type="hidden" name="bot-field" />
+
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Full Name"
+            className="input-premium"
+          />
+
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Email Address"
+            className="input-premium"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            required
+            placeholder="Phone Number"
+            className="input-premium"
+          />
+
+          <input
+            type="date"
+            name="preferred_date"
+            required
+            className="input-premium"
+          />
+
+          <input
+            type="time"
+            name="preferred_time"
+            required
+            className="input-premium"
+          />
+
+          <select
+            name="appointment_type"
+            className="input-premium md:col-span-2"
+            required
+          >
+            <option value="">Select Appointment Type</option>
+            <option>General Consultation</option>
+            <option>Implant Consultation</option>
+            <option>Denture Consultation</option>
+            <option>Smile Rehabilitation</option>
+          </select>
+
+          <textarea
+            name="message"
+            rows={4}
+            placeholder="Additional notes (optional)"
+            className="input-premium md:col-span-2"
+          />
+
+          <button
+            type="submit"
+            className="btn-hero md:col-span-2 py-4 text-base"
+          >
+            Request Appointment
+          </button>
+        </form>
       </div>
     </div>
   );
