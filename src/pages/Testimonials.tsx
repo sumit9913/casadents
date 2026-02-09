@@ -29,7 +29,7 @@ const TestimonialsPage = () => {
             <p className="text-muted-foreground">Happy Patients</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl md:text-5xl font-heading font-semibold text-primary mb-2">1000+</p>
+            <p className="text-4xl md:text-5xl font-heading font-semibold text-primary mb-2">4000+</p>
             <p className="text-muted-foreground">Implants Placed</p>
           </div>
           <div className="text-center">

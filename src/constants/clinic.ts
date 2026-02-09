@@ -26,7 +26,7 @@ export const clinicInfo = {
   },
   
   // Google Maps Embed URL (placeholder)
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.9!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjAiTiA3M8KwNTQnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4290604948626!2d72.8980478!3d19.1053534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f9b3769ba5%3A0xefef247132c97ae1!2sCasaDent%20Multispeciality%20Dental%20%26%20Facial%20Aesthetic%20Clinic!5e0!3m2!1sen!2sin!4v1700000000000",
   
   // Calendly URL (placeholder)
   calendlyUrl: "https://calendly.com/casadent",
