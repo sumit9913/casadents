@@ -4,18 +4,18 @@ export const clinicInfo = {
   description: "Premium prosthodontic care combining precision, comfort, and natural-looking results for your perfect smile.",
   
   // Contact Information
-  phone: "+91 98765 43210",
-  whatsapp: "+91 98765 43210",
-  email: "info@casadent.in",
+  phone: "+91 98199 91313",
+  whatsapp: "+91 98199 91313",
+  email: "casadents@gmail.com",
   
   // Address
   address: {
-    line1: "123 Premium Dental Plaza",
-    line2: "Near City Center",
-    city: "Your City",
-    state: "Your State",
-    pincode: "123456",
-    full: "123 Premium Dental Plaza, Near City Center, Your City, Your State - 123456"
+    line1: "1st floor, shop 36, Godrej Urban Park",
+    line2: "Sangharsh Nagar, Chandivali, Powai",
+    city: "Mumbai",
+    state: "Maharashtra",
+    pincode: "400072",
+    full: "1st floor, shop 36, Godrej Urban Park, Sangharsh Nagar, Chandivali, Powai, Mumbai, Maharashtra - 400072"
   },
   
   // Working Hours
@@ -48,10 +48,10 @@ export const clinicInfo = {
   
   // Doctor Information
   doctor: {
-    name: "Dr. Casa Dent",
+    name: "Dr. Sneha Maurya",
     qualification: "MDS (Prosthodontics)",
     title: "Specialist Prosthodontist",
     experience: "15+ years",
-    bio: "Dr. Casa Dent is a renowned prosthodontist with over 15 years of experience in dental implants, full mouth rehabilitation, and smile design. With advanced training from leading international institutions, Dr. Casa Dent combines cutting-edge technology with an artistic eye to create beautiful, functional smiles. Known for a gentle approach and meticulous attention to detail, patients from across the region trust their smiles to this expert care."
+    bio: "Dr. Sneha Maurya is a renowned prosthodontist with over 15 years of experience in dental implants, full mouth rehabilitation, and smile design. With advanced training from leading international institutions, Dr. Maurya combines cutting-edge technology with an artistic eye to create beautiful, functional smiles. Known for a gentle approach and meticulous attention to detail, patients from across the region trust their smiles to this expert care."
   }
 };

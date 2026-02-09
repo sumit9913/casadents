@@ -35,7 +35,14 @@ export function Header() {
 
   // Determine if we're on the homepage for initial hero styling
   const isHomepage = currentPath === "/";
-  const showDarkHeader = !isScrolled && isHomepage;
+  const showDarkHeader = false;
+
+  useEffect(() => {
+  const handleScroll = () => setIsScrolled(window.scrollY > 20);
+  handleScroll(); // ✅ set on load
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <header
@@ -43,7 +50,8 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-soft py-3"
-          : "bg-transparent py-5"
+          : "bg-white/40 backdrop-blur-md py-5"
+
       )}
     >
       <div className="container-custom">
